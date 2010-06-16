@@ -1,0 +1,19 @@
+[general]
+accounts = GMail
+sep = /
+nametrans = lambda foldername: re.sub('^INBOX.', , foldername)
+
+[Account GMail]
+localrepository = Local
+remoterepository = Remote
+
+[Repository Local]
+type = Maildir
+localfolders = /home/thibault/datas/mails
+
+[Repository Remote]
+type = IMAP
+remotehost = imap.gmail.com
+remoteuser = saunierthibault@gmail.com
+ssl = yes
+remotepass = SaLuTmAn1:W
